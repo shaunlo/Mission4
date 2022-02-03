@@ -23,10 +23,6 @@ namespace Mission4.Controllers
         {
             return View();
         }
-        public IActionResult NullResult()
-        {
-            return View();
-        }
         public IActionResult MyPodcasts()
         {
             return View();
@@ -47,11 +43,10 @@ namespace Mission4.Controllers
                 return View("Confirmation", am);
             }
 
-            return RedirectToAction("NullResult");
-        }
-        public IActionResult Privacy()
-        {
-            return View();
+            else
+            {
+                return View(am);
+            }
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

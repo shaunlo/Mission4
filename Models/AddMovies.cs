@@ -18,10 +18,10 @@ namespace Mission4.Models
         [Required]
         public int MovieId { get; set; }
 
-        [Required (ErrorMessage = "Material cost is required")]
+        [Required (ErrorMessage = "Name is required")]
         public string MovieName { get; set; }
 
-        [Required (ErrorMessage = "Material cost is required")]
+        [Required (ErrorMessage = "Rating is required")]
         public string Rating { get; set; }
 
         public string Edit { get; set; }
